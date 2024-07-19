@@ -12,6 +12,9 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .profile-image {
@@ -27,6 +30,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -43,6 +48,25 @@ a {
   color: rebeccapurple;
 }
 
+.left-side, .right-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 ul {
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
 }
+
+/* My alternative solution::
+.left-side {
+  margin-right: auto;
+}
+  
+(tip from https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+
+*/
