@@ -9,7 +9,7 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
+  /* this part is already given as a solution: */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,24 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* alternatively, in HTML file, .header class container should be wrapped around the button element */
+/* which means .header-button class would bot be necessary then / everything under .header */
+.header-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .icon {
@@ -27,7 +45,9 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+
+  min-width: 42px; /* Alternatively set 'flex-shrink' to 0. */
+
   height: 42px;
   border-radius: 50%;
   display: flex;
@@ -54,6 +74,8 @@ button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+
+  margin-top: 10px; /* Alternatively, margin-bottom in .text class in model solution */
 }
 
 button.continue {
